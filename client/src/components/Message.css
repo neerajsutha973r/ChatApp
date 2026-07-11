@@ -1,0 +1,42 @@
+.message-row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.message-row.own {
+  justify-content: flex-end;
+}
+
+.message-row:not(.own) {
+  justify-content: flex-start;
+}
+
+.my-message {
+  background: #dcf8c6;
+  max-width: 320px;
+  padding: 12px 15px;
+  border-radius: 15px 15px 0 15px;
+}
+
+.other-message {
+  background: white;
+  max-width: 320px;
+  padding: 12px 15px;
+  border-radius: 15px 15px 15px 0;
+}
+
+.username {
+  display: block;
+  font-weight: bold;
+  color: #128c7e;
+  margin-bottom: 6px;
+}
+
+.my-message small,
+.other-message small {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  color: gray;
+  font-size: 12px;
+}
