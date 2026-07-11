@@ -30,7 +30,7 @@ function Register() {
 
       alert(response.message);
 
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       alert(error.response?.data?.message || "Registration failed");
     } finally {
